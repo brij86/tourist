@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>restaurant</title>
+    <style>
+        body, .container {
+	background-color: grey;
+	color: #5B5D68;
+}
+
+.container {
+	margin-top: 50px;
+}
+
+main {
+	margin-top: 50px;
+}
+
+p {
+	font-size: 17px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+}
+
+a, a:visited {
+	color: #474850 !important;
+	text-decoration: none !important;
+}
+
+.topControl, .inText {
+	text-align: center;
+}
+
+.topControl {
+	cursor: pointer;
+}
+
+#inner {
+	height: 750px;
+	padding: 60px 0px;
+	background-color: white;
+}
+
+#inner div {
+	margin-top: 0px;
+}
+
+#pic {
+	height: 120px;
+	width: 120px;	
+	border: 6px solid #474850;
+	border-radius: 50%;
+	box-shadow: 0px 4px 3px #5B5D68;
+	margin: 0 auto;
+  background-image: url("http://lorempixel.com/output/food-q-c-640-480-2.jpg");
+  background-size: cover;
+  
+}
+
+.inText {
+	margin: 10px 0px;
+}
+
+.inText > p {
+	font-size: 20px;
+}
+
+.controls {
+	height: 90px;
+	vertical-align: middle;
+}
+
+.controls .fa {
+	margin-top: 55%;
+	cursor: pointer;
+}
+
+#nbResa {
+	font-size: 60px;
+}
+
+.submit {
+	height: 80px;
+}
+
+#submit {
+	background-color: #474850;
+	border: none;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	box-shadow: 0px 4px 3px #5B5D68;
+  transition: all 0.2s ease;
+}
+
+#submit:hover {
+  box-shadow: 0px 0px 0px #5B5D68;
+}
+
+input {
+  text-align: center;
+  font-size: 30px;
+}
+        </style>
+</head>
+<body>
+    <head>
+		<title>Formulaire de réservation</title>
+		<meta name="viewport" content="width=device-width user-scalable=no inital-scale=1">
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css" />
+		<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<div class="container">
+			<main class="row">
+				<div class="col m6 offset-m3"id="inner">
+					<div class="row">
+						<div class="col m2 offset-m1 topControl">
+							<a href="#"><i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i></a>
+
+						</div>
+						<div class="col m2 offset-m6 topControl">
+							<a href="#"><i class="fa fa-search fa-2x" aria-hidden="true"></i></a>
+
+						</div>
+						<div class="col m12">	
+							<div class="card"id="pic">
+								<div class="card-image">
+									
+								</div>
+							</div>
+						</div>
+						<div class="col m6 offset-m3 inText">
+							<p>please,book here</p>
+						</div>
+						<div class="col m4 offset-m4 inText">
+							<p>Table for</p>
+						</div>
+					</div>
+					<div class="row inText">
+						<div class="row">
+							<div class="col m2 offset-m3 controls" id="minus">
+								<i class="fa fa-minus fa-1x" aria-hidden="true"></i>
+	
+							</div>
+							<div class="col m2"id="nbResa">
+								
+							</div>
+							<div class="col m2 controls" id="plus">
+								<i class="fa fa-plus fa-1x" aria-hidden="true"></i>
+							</div>
+						</div>
+						<div class="col m6 offset-m3">
+							<p>Choose Date & Time</p>
+						</div>
+						<div class="col m6 offset-m3">
+							<input class="date-picker" type="date" name="">
+        					</div>
+						<div class="col m8 offset-m2 submit">
+							<button type="submit" id="submit" class="btn">Confirm</button>
+						</div>
+				</div>
+			</main>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</body>
+</html>
